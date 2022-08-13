@@ -1,0 +1,56 @@
+
+.main{
+    display: grid;
+    grid-template-areas: 
+    "personales"
+    "laborales"
+    "button";
+    grid-column: span;
+}
+
+.personales{
+    border: 1px solid black;
+    grid-area: personales;
+    display: grid;
+
+}
+
+.personales label{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     
+}
+
+label{
+    border: 1px solid black;
+}
+
+.laborales{
+    border: 1px solid black;
+    grid-area: laborales;
+    display: grid;
+}
+
+.laborales label{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.button{
+    grid-area: button;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 15fr 1fr;
+}
+
+.button button{
+
+    background-color: rgb(12, 12, 56);
+    color: white;
+    font-size: 50px;
+}
+
+h1{
+    text-align: center;
+}
